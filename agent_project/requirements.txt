@@ -1,0 +1,22 @@
+# Agent 工程化 Demo 依赖（锁定版本，与 ask_agent conda 环境一致，2026-10）
+# 注意：langchain 1.x 已移除旧版 AgentExecutor / create_openai_tools_agent，
+#       标准写法为 langchain.agents.create_agent 或手写 StateGraph。
+# 注意：langchain-community 已 sunset，向量库使用官方独立包 langchain-chroma / langchain-postgres。
+langchain==1.4.6
+langgraph==1.2.16
+langchain-openai==1.7.2
+langchain-ollama==1.1.0
+langchain-core==1.6.12
+langchain-text-splitters==1.1.3
+langgraph-checkpoint-sqlite==3.1.2
+langchain-chroma==1.1.0
+langchain-postgres==0.0.19
+chromadb==1.5.9
+python-dotenv>=1.0.0
+pydantic-settings==2.16.0
+fastapi==0.146.0
+uvicorn>=0.29.0
+PyYAML>=6.0.0
+
+# 追踪观测（生产可选）
+# langfuse>=2.0.0
